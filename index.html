@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        th, td {
+            border: 1px solid black;
+        }
+        tfoot {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <p>para criar uma tabela vamos utilizar a tag <u><b>table</b></u> para iniciar o processo da tabela, dentro dela que estarão todos os elementos de uma tabela</p>
+    <p>dentro então vamos começar a representação do cabeçalho das colunas desta tabela que será feita a partir do <u><b>thead</b></u></p>
+    <p>dentro da tag thead teremos a tag <u><b>tr</b></u> que  significa que ela será representada em linha.</p>
+    <p>entro a tag tr teremos a tag <u><b>th</b></u> que será a quantidade de colunas com seus respectivos nomes. </p>
+    <p>feita a parte do cabeçalho iremos para parte do corpo  da tabela que conterá os demais dados, e para criar este corpo usaremos a tag <u><b>tbody</b></u></p>
+    <p>dentro do tbody entraremos com os dados da tabela também em linha utilizando mais uma vez a tag tr para colocar os dados dentro das linhas, mas agora ao invés de usar o th usaremos o <u><b>td</b></u> para o preenchimento dos dados na coluna.</p>
+    <p>assim é feito o preenchimento da tabelas, mas para auxiliar na formatação da tabela temos alguns atributos que podemos colocar dentro da tag td que são o <u><b>colspan="x"</b></u> e <u><b>rowspan="x"</b></u> que fazem que uma coluna assuma o espaço de 2 ou mais colunas e uma linha assuma o espaço de 2 ou mais linhas respectivamente</p>
+    <p>e para finalizar nossa tabela temos o <u><b>tfoot</b></u> onde serão colocado nosso dados importante como  valores totais e resumos de nossa tabela. A estrutura será como o tbody onde teremos uma tr e dentro quantas tds forem necessárias.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>produto 1</td>
+                <td>2</td>
+                <td>5$</td>
+                <td rowspan="2">sim</td>
+            </tr>
+            <tr>
+                <td>produto 2</td>
+                <td>5</td>
+                <td>10$</td>
+            </tr>
+            <tr>
+                <td>produto 3</td>
+                <td>6</td>
+                <td>15$</td>
+                <td>não</td>
+            </tr>           
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>30$</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
